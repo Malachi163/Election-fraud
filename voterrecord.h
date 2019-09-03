@@ -17,13 +17,8 @@ public:
 	//accessor functions
 	string getID();
 	string getVote();
-	void addNewVotes();
-	void fillVector();
-	void printVector();
-	void modifyVote();
-	void query();
-	void voterStats();
-	vector<VoterRecord> myclass;
+	
+	
 	
 	
 
