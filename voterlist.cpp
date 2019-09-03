@@ -59,7 +59,7 @@ void VoterList::fillVector()
 
 	ifstream inFS;
 
-	inFS.open("C:\\Users\\Onepi\\Documents\\comp1525\\Demo\\HW1-votes.txt");
+	inFS.open("");
 
 	while (!inFS.eof())
 	{
@@ -96,52 +96,7 @@ void VoterList::printVector()
 //changes an existing vote within the vector
 void VoterList::modifyVote()
 {
-	//help from danzel
-	/*
-	string sel; //The ID # a user will enter for the seach
-	char m;//mayor
-	char p;//Proposition
-	char m1;//Measure 1
-	char m2;//Measure 2
-	int size = myclass.size();
-
-	cout << "\nPlease enter your 4-digit voter ID\n";
-	cin >> sel;
-
-	for (int i = 0; i < size; i++)
-	{
-		
-
-		if (sel == myclass[i].getID())
-		{
-			std::cout << myclass[i].getVote();
-			std::cout << endl;
 	
-			//*Testing Purposes* cout << endl << endl << y << endl<<"True\n\n";
-			cout << "1. Vote for Mayor\nA. Pintcher, Penny\nB. Dover, Skip\nC. Perman, Sue\n";
-			cin >> m;
-			cout << "\n2.PROPOSITION 17\nD. Yes\nE. No\n";
-			cin >> p;
-			cout << "\n3. MEASURE 1\nF. Yes\nG. No\n";
-			cin >> m1;
-			cout << "\n4. MEASURE 2\nH. Yes\nI. No\n";
-			cin >> m2;
-
-			myclass[i].getVote() =  m + p + m1 + m2; //Will change the vector at this location 
-			
-			
-		
-
-			cout << "\nNew ID = " << myclass[i].getVote() << endl;
-
-
-			i = 5;
-
-			break;
-		}
-		
-	}
-	*/
 	string sel;
 	cout << "\nPlease enter your 4-digit voter ID\n";
 	cin >> sel;
@@ -310,6 +265,6 @@ void VoterList::voterStats()
 	std::cout << "\n\nFor MEASURE 2 = " << m2 << " Votes (" << (m2 / myclass.size() * 100) << "%)";
 	std::cout << "\nAgainst MEASURE 2 = " << n2 << " Votes (" << (n2 / myclass.size() * 100) << "%)" << endl;
 
-	//help from danzel
+	
 
 }
